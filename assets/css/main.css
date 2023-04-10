@@ -1321,6 +1321,7 @@ button {
 			letter-spacing: 0.2rem;
 			font-size: 1.25rem;
 			line-height: 2;
+			font-weight: bold;
 		}
 
 	#header nav ul {
