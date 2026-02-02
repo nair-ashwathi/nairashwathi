@@ -1155,8 +1155,16 @@ button {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		
+		background-color: #C04000; /* ← pick your color */
+}
 		/* We can change the background image here. */
-		background-image: url("../../images/relativity.jpg");
+		/*background-image: url("../../images/relativity.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1672,7 +1680,7 @@ button {
 #pixel-wrapper {
   transform: scale(0.85);           /* try 0.7–0.9 */
   transform-origin: top left;
-  width: 117%;
+  width: 100%;
 }
 
 /* Disable smoothing */
@@ -1700,7 +1708,7 @@ input, textarea, button {
 
 /* Fix readability for body text */
 p, li {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   line-height: 1.7;
   letter-spacing: 0.04em;
 }
