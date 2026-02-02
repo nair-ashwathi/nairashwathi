@@ -1680,4 +1680,28 @@ button {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
 }
+/* =====================================
+   FORCE PIXEL FONT EVERYWHERE
+   ===================================== */
+
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, ul, ol,
+nav, header, footer,
+article, section, div,
+input, textarea, button {
+  font-family: 'Press Start 2P', monospace !important;
+  
+  /* kill font smoothing */
+  -webkit-font-smoothing: none !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-smooth: never !important;
+}
+
+/* Fix readability for body text */
+p, li {
+  font-size: 0.7rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+}
 
