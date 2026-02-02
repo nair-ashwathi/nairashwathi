@@ -174,6 +174,16 @@ p {
 	margin: 0 0 2rem 0;
 }
 
+body, h1, h2, h3, p, a {
+  font-family: 'Press Start 2P', monospace;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 0.7rem;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
 	color: #ffffff;
 	font-weight: 600;
@@ -1656,4 +1666,18 @@ button {
 	  image-rendering: pixelated;
 	  image-rendering: crisp-edges;
 	}
+/* ===============================
+   Pixel effect wrapper
+   =============================== */
+#pixel-wrapper {
+  transform: scale(0.85);           /* try 0.7–0.9 */
+  transform-origin: top left;
+  width: 117%;
+}
+
+/* Disable smoothing */
+* {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
 
