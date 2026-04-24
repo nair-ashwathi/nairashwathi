@@ -110,6 +110,7 @@
 							<span class="image main">
 								<img src="images/pic01.jpg" alt=""/>
 							</span>
+							<span class="close"></span>
 							<!-- Here are three paragraphs where you can fill out information about yourself -->
 							<p>
 								<!-- Items contained in <b> tags are bolded! -->
@@ -121,10 +122,132 @@
 							<p>
 								<b>Publications:</b> <a href="https://ui.adsabs.harvard.edu/">Include ADS link!</a>
 							</p>
+							<div class="proj-grid">
+						      <div class="proj-card" onclick="openDetail(this)"
+						           data-title="Massive Binary Evolution"
+						           data-img="images/project1.jpg"
+						           data-detail="Full description of Field Study I goes here. Write as much as you like.">
+						        <div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
+						        <div class="proj-body">
+						          <p class="proj-name">Evolution of Double Neutron Stars</p>
+						          <p class="proj-desc">Evolution of a Double Neutron Star.</p>
+						          <span class="read-more">read more →</span>
+						        </div>
+						      </div>
+							  <div class="proj-card" onclick="openDetail(this)"
+						           data-title="CV & Bio"
+						           data-img="images/project3.jpg"
+						           data-detail="Full CV and biography text goes here.">
+						        <div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
+						        <div class="proj-body">
+						          <p class="proj-name">CV & Bio</p>
+						          <p class="proj-desc">Academic background, positions, and affiliations.</p>
+						          <span class="read-more">read more →</span>
+						        </div>
+						      </div>
+						    </div>
+						    <div class="detail-view" id="about-detail">
+						      <button class="back-btn" onclick="closeDetail('about-detail')">← back</button>
+						      <div class="detail-img-wrap"><img class="detail-img" src="" alt=""/></div>
+						      <h3 class="detail-title"></h3>
+						      <p class="detail-body"></p>
+						    </div>
 						</article>
-
-						<!-- Here is the "Research" card. -->
+						
+						  <!-- Research -->
 						<article id="research">
+						<h2 class="major">Research</h2>
+						<span class="image main">
+							<img src="images/pic02.jpg" alt=""/>
+						</span>
+						<p>I'm a researcher and artist working at the intersection of science and creative expression.</p>
+						<div class="proj-grid">
+						  <div class="proj-card" onclick="openDetail(this)"
+							   data-title="Formation of Double Neutron Stars at Solar Metallicity"
+							   data-img="images/project1.jpg"
+							   data-detail="Full description of Field Study I goes here. Write as much as you like.">
+							<div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
+							<div class="proj-body">
+							  <p class="proj-name">Field Study I</p>
+							  <p class="proj-desc">Botanical drawings from a 2-year field study in Kerala.</p>
+							  <span class="read-more">read more →</span>
+							</div>
+						  </div>
+						  <div class="proj-card" onclick="openDetail(this)"
+							   data-title="Formation of Double Neutron Stars at Low Metallicity"
+							   data-img="images/project2.jpg"
+							   data-detail="Full description of Memory Maps goes here.">
+							<div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
+							<div class="proj-body">
+							  <p class="proj-name">Formation of Double Neutron Stars at Low Metallicity</p>
+							  <p class="proj-desc">Mixed-media works exploring spatial memory and place.</p>
+							  <span class="read-more">read more →</span>
+							</div>
+						  </div>
+						  <div class="proj-card" onclick="openDetail(this)"
+							   data-title="Double White Dwarfs"
+							   data-img="images/project3.jpg"
+							   data-detail="Variable stars in the LMC. I. Three short-period contacts
+									binaries and a host of δ Scuti stars.">
+							<div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
+							<div class="proj-body">
+							  <p class="proj-name">Double White Dwarfs</p>
+							  <p class="proj-desc">Double White Dwarfs</p>
+							  <span class="read-more">read more →</span>
+							</div>
+						  </div>
+						</div>
+						<div class="detail-view" id="research-detail">
+						  <button class="back-btn" onclick="closeDetail('research-detail')">← back</button>
+						  <div class="detail-img-wrap"><img class="detail-img" src="" alt=""/></div>
+						  <h3 class="detail-title"></h3>
+						  <p class="detail-body"></p>
+						</div>
+						</article>
+						
+						  <!-- CONTACT -->
+						<article id="contact">
+						<h2 class="major">Contact</h2>
+						<span class="close"></span>
+						<p>Find me on any of these platforms.</p>
+						<div class="contact-grid">
+						  <a class="contact-card" href="mailto:hello@ashwathinair.com">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<rect x="4" y="10" width="36" height="24" rx="3" stroke="white" stroke-width="1.5" fill="none"/>
+								<polyline points="4,10 22,26 40,10" stroke="white" stroke-width="1.5" fill="none"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Email</p>
+							<p class="contact-handle">hello@ashwathinair.com</p>
+						  </a>
+						  <a class="contact-card" href="https://bsky.app/profile/yourhandle.bsky.social">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<path d="M22 14c-3 4.5-8 7-13 7.5 0 0 1 10 13 14 12-4 13-14 13-14-5-.5-10-3-13-7.5z" stroke="white" stroke-width="1.5" fill="none"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Bluesky</p>
+							<p class="contact-handle">@yourhandle.bsky.social</p>
+						  </a>
+						  <a class="contact-card" href="https://instagram.com/yourhandle">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<rect x="8" y="8" width="28" height="28" rx="7" stroke="white" stroke-width="1.5" fill="none"/>
+								<circle cx="22" cy="22" r="7" stroke="white" stroke-width="1.5" fill="none"/>
+								<circle cx="31" cy="13" r="2" fill="white"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Instagram</p>
+							<p class="contact-handle">@yourhandle</p>
+						  </a>
+						</div>
+						</article>
+						
+						</div>
+						
+						<!-- Here is the "Research" card. -->
+						<!--<article id="research">
 							<h2 class="major">Research</h2>
 							<span class="image main">
 								<img src="images/pic02.jpg" alt=""/>
@@ -133,11 +256,11 @@
 								<!-- 	A <br> tag puts in a break so that the text that follows it displays on
 									the next line.
 								-->
-								<b>Discovering the Origins of Gravitational wave sources: Heavy Binary Neutron Star edition</b><br>Project description, including further links to posters, talks, publications.
+						<!--		<b>Discovering the Origins of Gravitational wave sources: Heavy Binary Neutron Star edition</b><br>Project description, including further links to posters, talks, publications.
 							</p>
 							<p>
 								<b>Variable stars in the LMC. I. Three short period contact
-binaries and a host of δ Scuti stars</b><br>Project description, including further links to posters, talks, publications.
+								binaries and a host of δ Scuti stars</b><br>Project description, including further links to posters, talks, publications.
 							</p>
 						</article>
 
@@ -150,22 +273,54 @@ binaries and a host of δ Scuti stars</b><br>Project description, including furt
 							<p>
 								<b>Teaching and Mentoring</b><be> Teaching little curious minds give me so much joy. I have been a high school physics and maths lecturer for 5 years. As a part of my PhD I have supervised short-term work experience students. 
 								I enjoy making easy to intermediate level of research questions for students and seeing them put together the evidences and gaps. Here's some gallery dump of the students I supervised.
-									I am a science professional mentor at <a href="https://in2science.org.au/">In2Science</a>
-									
-							</p>
-							<p>
-								<b>Outreach:</b><br> I love sharing my enthusiasm for astrophysics and science in general with kids and public. 
-							</p>
-							<p>
-								<b>Equity & Inclusion:</b> I am currently a student represntative of the Equity-Diversity-Inclusion committee at Centre for Astrophysics and Supercomputing. 
-								
+									I am a science professional mentor at <a href="https://in2science.org.au/">In2Science</a>		
 							</p>
 
-						        <p>
-								<b>Other committees</b> <br>I am also a part of <a href="https://www.includeher.au/">Include Her</a>
-						        </p>
-									
-						</article>
+							<div class="proj-grid">
+							  <div class="proj-card" onclick="openDetail(this)"
+								   data-title="Teaching and mentoring"
+								   data-img="images/project1.jpg"
+								   data-detail="Teaching little curious minds give me so much joy. I have been a high school physics and maths lecturer for 5 years. As a part of my PhD I have supervised short-term work experience students. 
+								I enjoy making easy-to-intermediate level of research questions for students and seeing them put together the evidences and gaps. Here's some gallery dump of the students I supervised.
+									I am a science professional mentor at <a href="https://in2science.org.au/">In2Science</a>">
+								<div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
+								<div class="proj-body">
+								  <p class="proj-name">Teaching and mentoring</p>
+								  <p class="proj-desc"></p>
+								  <span class="read-more">read more →</span>
+								</div>
+							  </div>
+							  <div class="proj-card" onclick="openDetail(this)"
+								   data-title="Outreach"
+								   data-img="images/project2.jpg"
+								   data-detail="Full description of Memory Maps goes here.">
+								<div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
+								<div class="proj-body">
+								  <p class="proj-name">Outreach</p>
+								  <p class="proj-desc"></p>
+								  <span class="read-more">read more →</span>
+								</div>
+							  </div>
+							  <div class="proj-card" onclick="openDetail(this)"
+								   data-title="Equity, Diversity & Inclusion"
+								   data-img="images/project3.jpg"
+								   data-detail="I am currently a student representative of the Equity-Diversity-Inclusion committee at Centre for Astrophysics and Supercomputing.">
+								<div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
+								<div class="proj-body">
+								  <p class="proj-name">Equity, Diversity & Inclusion</p>
+								  <p class="proj-desc">I care about</p>
+								  <span class="read-more">read more →</span>
+								</div>
+							  </div>
+							</div>
+							<div class="detail-view" id="committee-detail">
+							  <button class="back-btn" onclick="closeDetail('committee-detail')">← back</button>
+							  <div class="detail-img-wrap"><img class="detail-img" src="" alt=""/></div>
+							  <h3 class="detail-title"></h3>
+							  <p class="detail-body"></p>
+							</div>
+					 	</article>
+							
 						
 						<article id="art">
 							<h2 class="major">Art</h2>
@@ -187,8 +342,49 @@ binaries and a host of δ Scuti stars</b><br>Project description, including furt
 							</p>
 						</article>
 
-						<!-- Here is a the "Contact" card. -->
 						<article id="contact">
+						<h2 class="major">Contact</h2>
+						<span class="close"></span>
+						<p>Find me on any of these platforms.</p>
+						<div class="contact-grid">
+						  <a class="contact-card" href="mailto:hello@ashwathinair.com">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<rect x="4" y="10" width="36" height="24" rx="3" stroke="white" stroke-width="1.5" fill="none"/>
+								<polyline points="4,10 22,26 40,10" stroke="white" stroke-width="1.5" fill="none"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Email</p>
+							<p class="contact-handle">hello@ashwathinair.com</p>
+						  </a>
+						  <a class="contact-card" href="https://bsky.app/profile/yourhandle.bsky.social">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<path d="M22 14c-3 4.5-8 7-13 7.5 0 0 1 10 13 14 12-4 13-14 13-14-5-.5-10-3-13-7.5z" stroke="white" stroke-width="1.5" fill="none"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Bluesky</p>
+							<p class="contact-handle">@yourhandle.bsky.social</p>
+						  </a>
+						  <a class="contact-card" href="https://instagram.com/yourhandle">
+							<div class="contact-icon">
+							  <svg viewBox="0 0 44 44" fill="none">
+								<rect x="8" y="8" width="28" height="28" rx="7" stroke="white" stroke-width="1.5" fill="none"/>
+								<circle cx="22" cy="22" r="7" stroke="white" stroke-width="1.5" fill="none"/>
+								<circle cx="31" cy="13" r="2" fill="white"/>
+							  </svg>
+							</div>
+							<p class="contact-name">Instagram</p>
+							<p class="contact-handle">@yourhandle</p>
+						  </a>
+						</div>
+						</article>
+						
+						</div>
+					</div>
+
+						<!-- Here is a the "Contact" card. -->
+						<!--<article id="contact">
 							<h2 class="major">Contact</h2>
 							<p> 
 								<b>Email:</b> 
@@ -201,30 +397,30 @@ binaries and a host of δ Scuti stars</b><br>Project description, including furt
 								These icons are rendered using Font Awesome fonts, and you can find more icons
 								here: https://fontawesome.com/icons
 							-->
-							<ul class="icons">
+							<!--<ul class="icons">
 								<!-- The Bluesky icon -->
-								<li>
+							<!--	<li>
 									<!-- 	Note that you need to change the link to point to your page.
 										Replace "#" with your Twitter profile page.
 									-->
-									<a href="https://bsky.app/profile/ashtr0.bsky.social" class="icon fa-bluesky">
+							<!--		<a href="https://bsky.app/profile/ashtr0.bsky.social" class="icon fa-bluesky">
 										<span class="label">Bluesky</span>
 									</a>
 								</li>
 								<!-- The Facebook icon -->
-								<li>
+							<!--	<li>
 									<a href="#" class="icon fa-facebook">
 										<span class="label">Facebook</span>
 									</a>
 								</li>
 								<!-- The Instagram icon -->
-								<li>
+								<!--<li>
 									<a href="#" class="icon fa-instagram">
 										<span class="label">Instagram</span>
 									</a>
 								</li>
 								<!-- The GitHub icon -->
-								<li>
+								<!--<li>
 									<a href="#" class="icon fa-github">
 										<span class="label">GitHub</span>
 									</a>
@@ -239,8 +435,10 @@ binaries and a host of δ Scuti stars</b><br>Project description, including furt
 										<span class="label">Email</span>
 									</a>
 								</li> -->
-							</ul>
+							<!--</ul>
 						</article>
+
+				
 					</div>
 
 					<!-- This is the footer that appears at the bottom of the page -->
