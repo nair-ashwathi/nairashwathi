@@ -1871,8 +1871,8 @@ p, li {
 }
 
 .detail-title {
-  font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.52rem !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 0.7rem !important;
   color: #fff;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2098,8 +2098,8 @@ p, li {
 
 /* 4. Fix tagline size */
 #header .content p {
-  font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.42rem !important;
+  font-family: 'Source Sans Pro', monospace !important;
+  font-size: 0.6rem !important;
   letter-spacing: 0.1em !important;
   line-height: 1.9 !important;
   text-transform: uppercase !important;
