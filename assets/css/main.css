@@ -2134,3 +2134,58 @@ p, li {
   animation: floatY 4s ease-in-out infinite;
   opacity: 0.9;
 }
+
+/* =============================================
+   READABLE FONT INSIDE ALL ARTICLES
+   ============================================= */
+
+/* Override pixel font for all article body content */
+#main article p,
+#main article li,
+#main article span:not(.close):not(.read-more),
+#main article .proj-desc,
+#main article .detail-body,
+#main article .contact-handle {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.75 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.01em !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-smooth: auto !important;
+}
+
+/* Keep pixel font only for headings and labels inside articles */
+#main article h2,
+#main article h3,
+#main article .proj-name,
+#main article .contact-name,
+#main article .read-more,
+#main article .back-btn,
+#main article .detail-title {
+  font-family: 'Press Start 2P', monospace !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Slightly larger article heading */
+#main article h2.major {
+  font-size: 0.75rem !important;
+  letter-spacing: 0.15em !important;
+}
+
+/* =============================================
+   BIGGER PROFILE PHOTO
+   ============================================= */
+
+#header .logo {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+#header .logo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+}
