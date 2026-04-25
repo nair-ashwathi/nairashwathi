@@ -1676,14 +1676,6 @@ button {
 	  image-rendering: pixelated;
 	  image-rendering: crisp-edges;
 	}
-/* ===============================
-   Pixel effect wrapper
-   =============================== */
-#pixel-wrapper {
-  transform: scale(0.85);           /* try 0.7–0.9 */
-  transform-origin: top left;
-  width: 100%;
-}
 
 /* Disable smoothing */
 * {
@@ -2080,4 +2072,65 @@ p, li {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
+/* =============================================
+   LANDING PAGE FIXES
+   ============================================= */
+
+/* 1. Remove the vertical connector lines from original theme */
+#header > *:before {
+  display: none !important;
+}
+
+/* 2. Remove the huge top margins the original theme adds between header children */
+#header > * {
+  margin-top: 0 !important;
+}
+
+/* 3. Fix name size and font */
+#header h1 {
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 0.95rem !important;
+  letter-spacing: 0.08em !important;
+  line-height: 1.6 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+/* 4. Fix tagline size */
+#header .content p {
+  font-family: 'Press Start 2P', monospace !important;
+  font-size: 0.42rem !important;
+  letter-spacing: 0.1em !important;
+  line-height: 1.9 !important;
+  text-transform: uppercase !important;
+  font-weight: normal !important;
+}
+
+/* 5. Remove border from content block */
+#header .content {
+  border: none !important;
+}
+
+/* 6. Widen header so illustration panel has room to appear */
+#header {
+  max-width: 95vw !important;
+  width: 100% !important;
+  padding: 2rem 3rem !important;
+}
+
+/* 7. Make sure illus-panel shows and SVG floats */
+.illus-panel {
+  display: flex !important;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 200px;
+}
+
+.illus-panel svg,
+.illus-panel img {
+  max-width: 220px;
+  width: 100%;
+  animation: floatY 4s ease-in-out infinite;
+  opacity: 0.9;
 }
