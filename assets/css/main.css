@@ -2164,7 +2164,7 @@ p, li {
 #main article .read-more,
 #main article .back-btn,
 #main article .detail-title {
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -2204,8 +2204,8 @@ p, li {
 /* Position back button top-left, level with the × */
 .back-btn {
   position: absolute !important;
-  top: 0rem !important;
-  left: 0rem !important;
+  top: 0 !important;
+  left: 0 !important;
   margin: 0 !important;
   z-index: 10;
 }
