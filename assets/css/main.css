@@ -1788,8 +1788,8 @@ p, li {
 }
 
 .proj-name {
-  font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.38rem !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 0.59rem !important;
   color: #fff;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1842,10 +1842,10 @@ p, li {
   border-radius: 3px;
   color: rgba(255,255,255,0.6);
   font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.3rem;
+  font-size: 0.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 6px 14px;
+  padding: 8px 16px;
   cursor: pointer;
   margin-bottom: 1.2rem;
   height: auto;
@@ -2188,4 +2188,15 @@ p, li {
   height: 100% !important;
   object-fit: cover !important;
   border-radius: 50% !important;
+}
+
+/* About / article intro paragraph */
+#main article > p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 1rem !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.01em !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smooth: auto !important;
 }
