@@ -346,16 +346,34 @@
       const detailId = article.id + '-detail';
       const detail = document.getElementById(detailId);
       const grid = article.querySelector('.proj-grid');
+  
+      // hide intro content (paragraphs and headings above the grid)
+      article.querySelectorAll(':scope > p, :scope > h2, :scope > span.image').forEach(el => {
+        el.style.display = 'none';
+      });
+  
       detail.querySelector('.detail-img').src = card.dataset.img;
       detail.querySelector('.detail-title').textContent = card.dataset.title;
       detail.querySelector('.detail-body').textContent = card.dataset.detail;
       grid.classList.add('hidden');
       detail.classList.add('open');
+  
+      // scroll panel back to top
+      article.scrollTop = 0;
     }
+  
     function closeDetail(id) {
       const detail = document.getElementById(id);
-      detail.closest('article').querySelector('.proj-grid').classList.remove('hidden');
+      const article = detail.closest('article');
+  
+      // restore intro content
+      article.querySelectorAll(':scope > p, :scope > h2, :scope > span.image').forEach(el => {
+        el.style.display = '';
+      });
+  
+      article.querySelector('.proj-grid').classList.remove('hidden');
       detail.classList.remove('open');
+      article.scrollTop = 0;
     }
   </script>
 
