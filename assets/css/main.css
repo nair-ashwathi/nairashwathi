@@ -1960,7 +1960,7 @@ p, li {
 #header {
   flex-direction: row !important;
   align-items: center !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   gap: 2.5rem;
   text-align: left !important;
   background-image: none !important;
