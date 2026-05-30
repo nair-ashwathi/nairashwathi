@@ -1373,7 +1373,7 @@ button {
 				padding: 0 1.25rem 0 1.45rem;
 				text-transform: uppercase;
 				letter-spacing: 0.2rem;
-				font-size: 0.8rem;
+				font-size: 0.9rem;
 				border-bottom: 0;
 				font-weight: normal;
 			}
@@ -2093,7 +2093,7 @@ p, li {
   font-family: 'Press Start 2P', monospace !important;
   font-size: 1.2rem !important;
   letter-spacing: 0.08em !important;
-  line-height: 1.6 !important;
+  line-height: 1.9 !important;
   margin-bottom: 0.6rem !important;
   text-align: center !important;
 }
