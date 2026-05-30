@@ -2091,7 +2091,7 @@ p, li {
 /* 3. Fix name size and font */
 #header h1 {
   font-family: 'Press Start 2P', monospace !important;
-  font-size: 1.0rem !important;
+  font-size: 1.2rem !important;
   letter-spacing: 0.08em !important;
   line-height: 1.6 !important;
   margin-bottom: 0.6rem !important;
@@ -2101,7 +2101,7 @@ p, li {
 /* 4. Fix tagline size */
 #header .content p {
   font-family: 'Source Sans Pro', monospace !important;
-  font-size: 0.9rem !important;
+  font-size: 1.0rem !important;
   letter-spacing: 0.1em !important;
   line-height: 1.9 !important;
   text-transform: uppercase !important;
