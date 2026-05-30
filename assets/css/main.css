@@ -1375,7 +1375,7 @@ button {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				border-bottom: 0;
-				font-weight: bold;
+				font-weight: normal;
 			}
 
 				#header nav ul li a:hover {
@@ -1872,7 +1872,7 @@ p, li {
 
 .detail-title {
   font-family: 'Source Sans Pro', sans-serif !important;
-  font-size: 0.7rem !important;
+  font-size: 1.0rem !important;
   color: #fff;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2105,7 +2105,7 @@ p, li {
   letter-spacing: 0.1em !important;
   line-height: 1.9 !important;
   text-transform: uppercase !important;
-  font-weight: normal !important;
+  font-weight: bold !important;
   text-align: center !important;
 }
 
