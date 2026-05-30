@@ -2095,6 +2095,7 @@ p, li {
   letter-spacing: 0.08em !important;
   line-height: 1.6 !important;
   margin-bottom: 0.6rem !important;
+  align-self: center !important;
 }
 
 /* 4. Fix tagline size */
@@ -2105,6 +2106,7 @@ p, li {
   line-height: 1.9 !important;
   text-transform: uppercase !important;
   font-weight: normal !important;
+  align-self: center !important;
 }
 
 /* 5. Remove border from content block */
