@@ -2116,6 +2116,8 @@ p, li {
   max-width: 95vw !important;
   width: 100% !important;
   padding: 2rem 3rem !important;
+  margin: 0 auto !important;          /* ← add this */
+  justify-content: center !important;
 }
 
 /* 7. Make sure illus-panel shows and SVG floats */
