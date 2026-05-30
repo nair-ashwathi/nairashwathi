@@ -1960,7 +1960,7 @@ p, li {
 #header {
   flex-direction: row !important;
   align-items: center !important;
-  justify-content: flex-start !important;
+  justify-content: center !important;
   gap: 2.5rem;
   text-align: left !important;
   background-image: none !important;
@@ -2099,7 +2099,7 @@ p, li {
 /* 4. Fix tagline size */
 #header .content p {
   font-family: 'Source Sans Pro', monospace !important;
-  font-size: 0.6rem !important;
+  font-size: 0.9rem !important;
   letter-spacing: 0.1em !important;
   line-height: 1.9 !important;
   text-transform: uppercase !important;
