@@ -2176,7 +2176,7 @@ p, li {
 
 /* Slightly larger article heading */
 #main article h2.major {
-  font-size: 0.75rem !important;
+  font-size: 1.75rem !important;
   letter-spacing: 0.15em !important;
 }
 
