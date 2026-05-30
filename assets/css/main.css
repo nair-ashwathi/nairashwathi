@@ -1556,7 +1556,7 @@ button {
 		position: relative;
 		width: 72rem;
 		max-width: 92vw;
-		background-color: rgba(3, 117, 180, 0.85);
+		background-color: #0375b4;
 		border-radius: 4px;
 		opacity: 0;
 		overflow-y: auto;
