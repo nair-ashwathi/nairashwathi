@@ -94,7 +94,7 @@ html {
 }
 
 body {
-	background: #1b1f22;
+	background: #f2d44b;
 }
 
 	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -185,7 +185,7 @@ p {
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: #ffffff;
+	color: #262228;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
