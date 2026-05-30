@@ -1962,7 +1962,7 @@ p, li {
   align-items: center !important;
   justify-content: center !important;
   gap: 2.5rem;
-  text-align: left !important;
+  text-align: center !important;
   background-image: none !important;
   padding: 2rem;
   max-width: 900px;
@@ -2090,7 +2090,7 @@ p, li {
 /* 3. Fix name size and font */
 #header h1 {
   font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.95rem !important;
+  font-size: 1.0rem !important;
   letter-spacing: 0.08em !important;
   line-height: 1.6 !important;
   margin-bottom: 0.6rem !important;
