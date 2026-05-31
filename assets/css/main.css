@@ -1812,7 +1812,7 @@ p, li {
 .read-more {
   display: block;
   font-family: 'Press Start 2P', monospace !important;
-  font-size: 0.4rem !important;
+  font-size: 0.6rem !important;
   color: rgba(255,255,255,0.4);
   letter-spacing: 0.08em;
   text-transform: uppercase;
