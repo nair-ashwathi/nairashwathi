@@ -376,6 +376,16 @@
       article.scrollTop = 0;
     }
   </script>
+  <script>
+  const sections = ['about', 'research', 'community', 'art'];
+  sections.forEach(id => {
+    fetch(`content/${id}.html`)
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById(`${id}-content`).innerHTML = html;
+      });
+  });
+  </script>
 
 </body>
 </html>
