@@ -76,7 +76,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Massive Binary Evolution"
                data-img="images/project1.jpg"
-               data-detail="My primary research focuses on the evolution of massive binary systems and the formation of double neutron stars. Write your full description here.">
+               data-detail-html="My primary research focuses on the evolution of massive binary systems and the formation of double neutron stars. Write your full description here.">
             <div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Binary Evolution</p>
@@ -87,7 +87,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="CV & Bio"
                data-img="images/project2.jpg"
-               data-detail="Full academic CV and biography text goes here.">
+               data-detail-html="Full academic CV and biography text goes here.">
             <div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">CV & Bio</p>
@@ -113,7 +113,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Double Neutron Stars at Solar Metallicity"
                data-img="images/project1.jpg"
-               data-detail="Full description of your DNS solar metallicity research goes here.">
+               data-detail-html="Full description of your DNS solar metallicity research goes here.">
             <div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">DNS at Solar Z</p>
@@ -124,7 +124,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Double Neutron Stars at Low Metallicity"
                data-img="images/project2.jpg"
-               data-detail="Full description of your low metallicity DNS research goes here.">
+               data-detail-html="Full description of your low metallicity DNS research goes here.">
             <div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">DNS at Low Z</p>
@@ -135,7 +135,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Double White Dwarfs"
                data-img="images/project3.jpg"
-               data-detail="Full description of your double white dwarf research goes here.">
+               data-detail-html="Full description of your double white dwarf research goes here.">
             <div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Double White Dwarfs</p>
@@ -161,7 +161,11 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Teaching & Mentoring"
                data-img="images/project1.jpg"
-               data-detail="Teaching little curious minds gives me so much joy. I have been a high school physics and maths lecturer for 5 years. As part of my PhD I have supervised short-term work experience students. I am a science professional mentor at In2Science.">
+               data-detail-html="Teaching little curious minds gives me so much joy. 
+                I have been a high school physics and maths lecturer for 5 years. 
+              As part of my PhD I have supervised short-term work experience students. 
+              I am a science professional mentor at In2Science.">
+            
             <div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Teaching & Mentoring</p>
@@ -172,7 +176,12 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Outreach"
                data-img="images/project2.jpg"
-               data-detail="Full description of your outreach activities goes here.">
+               data-detail-html="Full description of your outreach activities goes here.">
+            <div class='gallery'>
+             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach1.jpg' alt='Outreach' /></div>
+             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach2.jpg' alt='Outreach' /></div>
+             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach3.jpg' alt='Outreach' /></div>
+           </div>
             <div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Outreach</p>
@@ -183,7 +192,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Equity, Diversity & Inclusion"
                data-img="images/project3.jpg"
-               data-detail="I am currently a student representative of the Equity-Diversity-Inclusion committee at the Centre for Astrophysics and Supercomputing.">
+               data-detail-html="I am currently a student representative of the Equity-Diversity-Inclusion committee at the Centre for Astrophysics and Supercomputing.">
             <div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">EDI</p>
@@ -209,7 +218,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Mystic Art"
                data-img="images/art1.jpg"
-               data-detail="Full description of your mystic art practice goes here.">
+               data-detail-html="Full description of your mystic art practice goes here.">
             <div class="proj-thumb" style="background-image:url('images/art1.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Mystic Art</p>
@@ -220,7 +229,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Photography"
                data-img="images/art2.jpg"
-               data-detail="My photography work, also available on VSCO.">
+               data-detail-html="My photography work, also available on VSCO.">
             <div class="proj-thumb" style="background-image:url('images/art2.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Photography</p>
@@ -231,7 +240,7 @@
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Digital & Mixed Media"
                data-img="images/art3.jpg"
-               data-detail="Full description of your digital and mixed media work goes here.">
+               data-detail-html="Full description of your digital and mixed media work goes here.">
             <div class="proj-thumb" style="background-image:url('images/art3.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Digital & Mixed Media</p>
@@ -355,9 +364,16 @@
   
       detail.querySelector('.detail-img').src = card.dataset.img;
       detail.querySelector('.detail-title').textContent = card.dataset.title;
-      detail.querySelector('.detail-body').textContent = card.dataset.detail;
+      const html = card.dataset.detailHtml;
+      if (html) {
+        detail.querySelector('.detail-body').innerHTML = html;
+      } else {
+        detail.querySelector('.detail-body').textContent = card.dataset.detail;
+      }
+  
       grid.classList.add('hidden');
       detail.classList.add('open');
+      article.scrollTop = 0;
   
       // scroll panel back to top
       article.scrollTop = 0;
