@@ -175,18 +175,29 @@
           </div>
           <div class="proj-card" onclick="openDetail(this)"
                data-title="Outreach"
-               data-img="images/project2.jpg"
-               data-detail-html="Full description of your outreach activities goes here.">
-            <div class='gallery'>
-             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach1.jpg' alt='Outreach' /></div>
-             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach2.jpg' alt='Outreach' /></div>
-             <div class='gallery-item' onclick='openLightbox(this)'><img src='images/outreach3.jpg' alt='Outreach' /></div>
-           </div>
-            <div class="proj-thumb" style="background-image:url('images/project2.jpg')"></div>
+               data-img="images/outreach1.jpg"
+               data-template="outreach-template">
+            <div class="proj-thumb" style="background-image:url('images/outreach.jpg')"></div>
             <div class="proj-body">
               <p class="proj-name">Outreach</p>
               <p class="proj-desc">Public engagement and science communication activities.</p>
               <span class="read-more">read more →</span>
+            </div>
+          </div>
+          
+          <!-- Hidden template for outreach detail content -->
+          <div id="outreach-template" style="display:none">
+            <p>Full description of your outreach activities goes here.</p>
+            <div class="gallery">
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/outreach1.jpg" alt="Outreach 1" />
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/outreach2.jpg" alt="Outreach 2" />
+              </div>
+              <div class="gallery-item" onclick="openLightbox(this)">
+                <img src="images/outreach3.jpg" alt="Outreach 3" />
+              </div>
             </div>
           </div>
           <div class="proj-card" onclick="openDetail(this)"
