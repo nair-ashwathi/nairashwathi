@@ -193,7 +193,58 @@
         <p> I enjoy different forms of art and expressing myself through them.
           I find myself experiencing my surroundings overwhelmingly (in a nice way), 
           which makes me want to capture it using different art forms. (Painting, photography, poetry, video-based art)</p>
-       
+        <div class="proj-grid">
+          <div class="proj-card" onclick="openDetail(this)"
+               data-title="Paintings"
+               data-img="images/art1.jpg"
+               data-detail-html="Full description of your mystic art practice goes here.">
+            <div class="proj-thumb" style="background-image:url('images/art1.jpg')"></div>
+            <div class="proj-body">
+              <p class="proj-name">Painting and sketching</p>
+              <p class="proj-desc"> .</p>
+              <span class="read-more">see more →</span>
+            </div>
+          </div>
+          <div class="proj-card" onclick="openDetail(this)"
+               data-title="Video arts"
+               data-img="images/art2.jpg"
+               data-detail-html="My photography work, also available on VSCO.">
+            <div class="proj-thumb" style="background-image:url('images/art2.jpg')"></div>
+            <div class="proj-body">
+              <p class="proj-name">Photography</p>
+              <p class="proj-desc">Visual storytelling through the lens. Also on VSCO.</p>
+              <span class="read-more">see more→</span>
+            </div>
+          </div>
+          <div class="proj-card" onclick="openDetail(this)"
+               data-title="Poetry"
+               data-img="images/art3.jpg"
+               data-detail-html="Full description of your digital and mixed media work goes here.">
+            <div class="proj-thumb" style="background-image:url('images/art3.jpg')"></div>
+            <div class="proj-body">
+              <p class="proj-name">Poems</p>
+              <p class="proj-desc">Poems I have written and recited .</p>
+              <span class="read-more">read and see more →</span>
+            </div>
+          </div>
+          <div class="proj-card" onclick="openDetail(this)"
+               data-title="Photography"
+               data-img="images/art3.jpg"
+               data-detail-html="Full description of your digital and mixed media work goes here.">
+            <div class="proj-thumb" style="background-image:url('images/art3.jpg')"></div>
+            <div class="proj-body">
+              <p class="proj-name">Photography</p>
+              <p class="proj-desc">My visual storytelling perspective</p>
+              <span class="see-more">See more →</span>
+            </div>
+          </div>
+        </div>
+        <div class="detail-view" id="art-detail">
+          <button class="back-btn" onclick="closeDetail('art-detail')">← back</button>
+          <div class="detail-img-wrap"><img class="detail-img" src="" alt=""/></div>
+          <h3 class="detail-title"></h3>
+          <p class="detail-body"></p>
+        </div>
       </article>
 
       <!-- CONTACT -->
