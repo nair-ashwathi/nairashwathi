@@ -1,6 +1,5 @@
 /* This is where the Font Awesome fonts come from */
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
 	Dimension by HTML5 UP
@@ -140,7 +139,7 @@ html {
 
 body, input, select, textarea {
 	color: #ffffff;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.65;
@@ -175,7 +174,7 @@ p {
 }
 
 body, h1, h2, h3, p, a {
-  font-family: 'Press Start 2P', monospace;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   line-height: 1.6;
 }
 
@@ -185,7 +184,7 @@ p {
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: #262228;
+	color: #8b1e2d;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
@@ -211,8 +210,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 2.25rem;
 	line-height: 1.3;
-	letter-spacing: 0.rem;
-	font-family: serif;
+	letter-spacing: 0rem;
+	font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 
 h2 {
@@ -1129,38 +1128,27 @@ button {
 
 	/* This sets the image the overlay on the background */
 	#bg:before {
-		-moz-transition: background-color 2.5s ease-in-out;
-		-webkit-transition: background-color 2.5s ease-in-out;
-		-ms-transition: background-color 2.5s ease-in-out;
-		transition: background-color 2.5s ease-in-out;
-		-moz-transition-delay: 0.75s;
-		-webkit-transition-delay: 0.75s;
-		-ms-transition-delay: 0.75s;
-		transition-delay: 0.75s;
-		background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-		background-size: auto, 256px 256px;
-		background-position: center, center;
-		background-repeat: no-repeat, repeat;
+		background-color: rgba(19, 21, 25, 0.16);
+		background-image: none;
+		background-size: auto;
+		background-position: center;
+		background-repeat: no-repeat;
 		/* This sets the order of rendering. This will sit on top of all elements with z-index < 2 */
 		z-index: 2;
 	}
 
 	/* This sets the content of the actual background */
 	#bg:after {
-		-moz-transform: scale(1.125);
-		-webkit-transform: scale(1.125);
-		-ms-transform: scale(1.125);
-		transform: scale(1.125);
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+		transition: none;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		
 		background-color: #fbd405; /* ← pick your color */
 }
 		/* We can change the background image here. */
@@ -1341,7 +1329,7 @@ button {
 			font-size: 1.25rem;
 			line-height: 2;
 			font-weight: bold;
-			font-family: serif;
+			font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 		}
 
 	#header nav ul {
@@ -1556,8 +1544,10 @@ button {
 		position: relative;
 		width: 72rem;
 		max-width: 92vw;
-		background-color: #056aa0;
+		background: linear-gradient(180deg, #10233a 0%, #213d63 100%);
+		border: solid 1px rgba(194, 220, 255, 0.45);
 		border-radius: 4px;
+		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04) inset, 0 14px 40px rgba(4, 13, 29, 0.24);
 		opacity: 0;
 		overflow-y: auto;
 		max-height: 85vh;
@@ -1683,7 +1673,7 @@ button {
   image-rendering: crisp-edges;
 }
 /* =====================================
-   FORCE PIXEL FONT EVERYWHERE
+   TYPOGRAPHY STACK
    ===================================== */
 
 html, body,
@@ -1692,12 +1682,12 @@ p, span, a, li, ul, ol,
 nav, header, footer,
 article, section, div,
 input, textarea, button {
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   
-  /* kill font smoothing */
-  -webkit-font-smoothing: none !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  font-smooth: never !important;
+  /* preserve consistent smoothing */
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-smooth: auto !important;
 }
 
 /* Fix readability for body text */
@@ -1707,7 +1697,7 @@ p, li {
   letter-spacing: 0.04em;
 }
 /* =====================================
-   FORCE PIXEL FONT ON LANDING PAGE
+   LANDING PAGE TYPOGRAPHY
    ===================================== */
 
 #header,
@@ -1717,11 +1707,11 @@ p, li {
 #header p,
 #header span,
 #header a {
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
 
-  -webkit-font-smoothing: none !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  font-smooth: never !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: auto !important;
+  font-smooth: auto !important;
 }
 
 /* Landing page text sizing */
@@ -1788,7 +1778,7 @@ p, li {
 }
 
 .proj-name {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.59rem !important;
   color: #fff;
   letter-spacing: 0.08em;
@@ -1798,7 +1788,7 @@ p, li {
 }
 
 .proj-desc {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.82rem !important;
   color: rgba(255,255,255,0.62);
   line-height: 1.6;
@@ -1811,7 +1801,7 @@ p, li {
 
 .read-more {
   display: block;
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.6rem !important;
   color: rgba(255,255,255,0.4);
   letter-spacing: 0.08em;
@@ -1841,7 +1831,7 @@ p, li {
   border: 1px solid rgba(255,255,255,0.3);
   border-radius: 3px;
   color: rgba(255,255,255,0.6);
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.86rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1871,7 +1861,7 @@ p, li {
 }
 
 .detail-title {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 1.0rem !important;
   color: #fff;
   letter-spacing: 0.1em;
@@ -1881,7 +1871,7 @@ p, li {
 }
 
 .detail-body {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.95rem !important;
   color: rgba(255,255,255,0.82);
   line-height: 1.8;
@@ -1933,7 +1923,7 @@ p, li {
 }
 
 .contact-name {
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.34rem !important;
   color: #fff;
   letter-spacing: 0.1em;
@@ -1943,7 +1933,7 @@ p, li {
 }
 
 .contact-handle {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 0.72rem !important;
   color: rgba(255,255,255,0.48);
   text-align: center;
@@ -2090,7 +2080,7 @@ p, li {
 
 /* 3. Fix name size and font */
 #header h1 {
-  font-family: 'Press Start 2P', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 1.2rem !important;
   letter-spacing: 0.08em !important;
   line-height: 1.9 !important;
@@ -2100,7 +2090,7 @@ p, li {
 
 /* 4. Fix tagline size */
 #header .content p {
-  font-family: 'Source Sans Pro', monospace !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 1.0rem !important;
   letter-spacing: 0.1em !important;
   line-height: 1.9 !important;
@@ -2152,7 +2142,7 @@ p, li {
 #main article .proj-desc,
 #main article .detail-body,
 #main article .contact-handle {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 1rem !important;
   line-height: 1.75 !important;
   font-weight: 300 !important;
@@ -2162,21 +2152,26 @@ p, li {
   font-smooth: auto !important;
 }
 
-/* Keep pixel font only for headings and labels inside articles */
+/* Keep headings and labels inside articles using the same Gill Sans stack */
+#main article h1,
 #main article h2,
 #main article h3,
+#main article h4,
+#main article h5,
+#main article h6,
 #main article .proj-name,
 #main article .contact-name,
 #main article .read-more,
 #main article .back-btn,
 #main article .detail-title {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  color: #ffffff !important;
   -webkit-font-smoothing: antialiased !important;
 }
 
 /* Slightly larger article heading */
 #main article h2.major {
-  font-size: 1.75rem !important;
+  font-size: 1.95rem !important;
   letter-spacing: 0.15em !important;
 }
 
@@ -2198,7 +2193,7 @@ p, li {
 
 /* About / article intro paragraph */
 #main article > p {
-  font-family: 'Source Sans Pro', sans-serif !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
   font-size: 1rem !important;
   line-height: 1.8 !important;
   font-weight: 300 !important;
@@ -2225,18 +2220,162 @@ p, li {
    GALLERY
    ============================================= */
 
+.community-scroll,
+.art-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 62vh;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+}
+
+.community-block,
+.art-block {
+  border-top: solid 1px rgba(255, 255, 255, 0.18);
+  padding-top: 1rem;
+}
+
+.community-block h3,
+.art-block h3 {
+  margin: 0 0 0.8rem 0;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+}
+
+.community-block p,
+.art-block p {
+  margin: 0 0 1rem 0;
+}
+
+.resource-link-space {
+  min-height: 2.75rem;
+  margin-top: 0.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.22);
+  border-radius: 0.35rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-  margin-top: 1.2rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.presentation-section {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: solid 1px rgba(255, 255, 255, 0.18);
+}
+
+.presentation-section h3 {
+  margin: 0 0 0.6rem 0;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 1.25rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase;
+}
+
+.presentation-section p {
+  margin: 0 0 1rem 0;
+}
+
+.presentation-embed-wrap {
+  width: 100%;
+  max-width: 46rem;
+  margin: 0.75rem 0 0.9rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 0.45rem;
+  overflow: hidden;
+}
+
+.presentation-embed-wrap iframe {
+  width: 100%;
+  min-height: 30rem;
+  border: 0;
+  display: block;
+  background: #ffffff;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.download-link:hover {
+  color: #d8e7ff;
+}
+
+.manual-thumb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.manual-thumb-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.7rem;
+}
+
+.manual-thumb-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.35rem;
+  display: block;
+}
+
+.manual-thumb-card p {
+  margin: 0.65rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+.poetry-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.video-wrap {
+  margin-top: 0;
+}
+
+.video-wrap video,
+.poetry-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+  border: 0;
+}
+
+@media screen and (max-width: 736px) {
+  .poetry-videos {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery-item {
-  aspect-ratio: 1/1;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 4px;
   cursor: pointer;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .gallery-item img {
@@ -2244,6 +2383,13 @@ p, li {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+.art-caption {
+  margin: 0 !important;
+  font-size: 0.82rem !important;
+  line-height: 1.5 !important;
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .gallery-item:hover img {
@@ -2269,11 +2415,36 @@ p, li {
   display: flex;
 }
 
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font: 400 1.65rem/1 "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
 .lightbox img {
   max-width: 90vw;
   max-height: 90vh;
   object-fit: contain;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 980px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 736px) {
@@ -2285,5 +2456,358 @@ p, li {
 @media screen and (max-width: 480px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+}
+
+/* =============================================
+   NEW LANDING LAYOUT:
+   - top nav bar, single line, top-center, slightly wide
+   - 60/40 split: photo+name+tagline+About text (left)
+     illustration (right)
+   - the whole landing block hides automatically
+     whenever a Research/Community/Art/Contact panel opens
+   ============================================= */
+
+/* smooth-scroll when the About link jumps to the section below */
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+/* ---- top nav bar (wider items) ---- */
+#header .top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 !important;
+  position: relative;
+}
+
+#header .top-nav::before {
+  content: '';
+  position: absolute;
+  top: -0.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(74rem, 92vw);
+  height: 2.9rem;
+  pointer-events: none;
+  opacity: 0.9;
+  background:
+    radial-gradient(circle at 10% 55%, rgba(255,255,255,0.9) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 18% 22%, rgba(255,243,182,0.8) 0 1.3px, transparent 2px),
+    radial-gradient(circle at 32% 45%, rgba(255,255,255,0.7) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 48% 18%, rgba(255,255,255,0.85) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 68% 62%, rgba(255,255,255,0.8) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 84% 30%, rgba(255,233,168,0.8) 0 1.2px, transparent 2px),
+    linear-gradient(120deg, transparent 0%, rgba(99, 124, 198, 0.18) 38%, rgba(236, 210, 120, 0.25) 48%, rgba(124, 157, 226, 0.18) 66%, transparent 100%);
+  background-repeat: no-repeat;
+  filter: blur(0.15px);
+}
+
+#header .top-nav ul {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 !important;
+  padding: 0;
+  border: solid 1px rgba(160, 194, 236, 0.6);
+  border-radius: 4px;
+  width: fit-content;
+  background: rgba(8, 17, 34, 0.22);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
+
+#header .top-nav ul li {
+  border-left: solid 1px rgba(255, 255, 255, 0.3) !important;
+  border-top: 0 !important;
+  padding-left: 0;
+}
+
+#header .top-nav ul li:first-child {
+  border-left: 0 !important;
+}
+
+#header .top-nav ul li a {
+  display: block;
+  min-width: 7.5rem !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 1.15rem 1.9rem;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: #dfe9ff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 736px) {
+  #header .top-nav ul {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #header .top-nav ul li {
+    border-left: solid 1px rgba(255, 255, 255, 0.3) !important;
+    border-top: 0 !important;
+    flex: 1 0 auto;
+  }
+
+  #header .top-nav ul li:first-child {
+    border-left: 0 !important;
+  }
+
+  #header .top-nav ul li a {
+    min-width: 0 !important;
+    padding: 0.95rem 0.85rem;
+    font-size: 0.55rem;
+  }
+}
+
+/* ---- landing content: 60/40 grid ---- */
+.landing-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1.4rem auto 0;
+  padding: 0 3rem;
+  position: relative;
+  z-index: 3;
+}
+
+.landing-left {
+  flex: 0 1 60%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.landing-right {
+  flex: 0 1 40%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+/* This is the fix for the "About Me lingering on other pages" bug:
+   the whole landing block (profile + About text + illustration)
+   disappears whenever a Research/Community/Art/Contact panel is open. */
+body.is-article-visible .landing-grid {
+  display: none !important;
+}
+
+/* ---- profile block and About Me side-by-side on desktop ---- */
+.profile-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  margin-top: -0.25rem;
+}
+
+.profile-block {
+  display: flex;
+  flex: 0 0 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  text-align: center;
+}
+
+.profile-block h1 {
+  margin: 0 !important;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 1.45rem !important;
+  letter-spacing: 0.08em !important;
+  color: #8b1e2d !important;
+}
+
+.profile-block .logo {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 2px rgba(255, 255, 255, 0.8);
+}
+
+.profile-block .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.profile-block .tagline {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 0.98rem !important;
+  letter-spacing: 0.04em !important;
+  line-height: 1.7 !important;
+  text-transform: none !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+.cv-button {
+  display: inline-block;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cv-button:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
+}
+
+.landing-contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-top: 0.05rem;
+}
+
+.landing-contact-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  color: #ffffff;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.landing-contact-row svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.bluesky-logo {
+  width: 1.15rem;
+  height: 1.15rem;
+  display: block;
+}
+
+.landing-contact-label {
+  margin: 0 !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.landing-email-link {
+  display: inline-block;
+  margin: -0.1rem 0 0.15rem !important;
+  color: #ffffff !important;
+  font-size: 0.84rem !important;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.landing-email-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- illustration, right column ---- */
+.landing-right .illus-panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.landing-right .illus-panel svg,
+.landing-right .illus-panel img {
+  max-width: 220px;
+  width: 100%;
+  animation: floatY 4s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+/* ---- About Me: always visible on the landing page ---- */
+.landing-about {
+  flex: 1 1 auto;
+  width: 100%;
+  text-align: left;
+  padding-top: 0.4rem;
+}
+
+.landing-about h2.major {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 1.78rem !important;
+  letter-spacing: 0.12em !important;
+  text-align: left;
+  margin-bottom: 1.5rem !important;
+}
+
+.landing-about p {
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif !important;
+  font-size: 0.95rem !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.01em !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-smooth: auto !important;
+  margin-bottom: 1.1rem !important;
+}
+
+/* ---- responsive: stack into one column ---- */
+@media screen and (max-width: 900px) {
+  .landing-grid {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+    gap: 2.5rem;
+  }
+
+  .landing-left,
+  .landing-right {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .profile-wrap {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .profile-block {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .landing-about {
+    text-align: left;
+  }
+
+  .landing-about h2.major {
+    text-align: center;
   }
 }
