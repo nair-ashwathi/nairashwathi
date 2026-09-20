@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashwathi Nair | PhD Researcher</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -13,13 +14,15 @@
 
 <body class="is-preload">
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <div id="wrapper">
 
     <!-- ========== HEADER ========== -->
     <header id="header">
 
       <!-- top navigation bar: single horizontal line, top-center -->
-      <nav class="top-nav">
+      <nav class="top-nav" aria-label="Primary navigation">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#research">Research</a></li>
@@ -82,7 +85,7 @@
             </div>
           </div>
 
-          <section class="landing-about" aria-hidden="true">
+          <section class="landing-about">
             <p>
               I am a final-year PhD researcher at Swinburne University of Technology and a member of OzGrav,
               where I study how gravitational-wave sources form and evolve across different astrophysical scenarios.
@@ -107,7 +110,7 @@
                or
                <img src="images/your-illustration.png" alt="illustration" />
           -->
-          <svg width="220" height="260" viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="220" height="260" viewBox="0 0 220 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <ellipse cx="110" cy="78" rx="22" ry="26" fill="white" opacity="0.55" />
             <ellipse cx="110" cy="68" rx="13" ry="14" fill="white" opacity="0.7" />
             <rect x="93" y="100" width="34" height="52" rx="6" fill="white" opacity="0.45" />
@@ -124,65 +127,128 @@
     </div>
 
     <!-- ========== MAIN ARTICLES ========== -->
-    <div id="main">
+    <main id="main" tabindex="-1">
 
       <!-- ABOUT -->
-      <article id="about">
-        <h2 class="major">About</h2>
-        <span class="close"></span>
+      <article id="about" aria-labelledby="about-title" tabindex="-1">
+        <h2 id="about-title" class="major">About</h2>
         <div id="about-content"></div>
       </article>
 
       <!-- RESEARCH -->
-      <article id="research">
-        <h2 class="major">Research</h2>
-        <span class="close"></span>
+      <article id="research" aria-labelledby="research-title" tabindex="-1">
+        <h2 id="research-title" class="major">Research</h2>
         <p>My research focuses on stellar astrophysics, binary evolution, and gravitational wave sources.</p>
         <div class="proj-grid">
-          <div class="proj-card" onclick="openDetail(this)" data-title="Formation of Double Neutron Stars"
-            data-img="images/project1.jpg"
+          <button class="proj-card" type="button" onclick="openDetail(this)" aria-label="Read more about Formation of Double Neutron Stars" data-title="Formation of Double Neutron Stars"
             data-detail-html="Full description of your DNS formation research goes here.">
-            <div class="proj-thumb" style="background-image:url('images/project1.jpg')"></div>
             <div class="proj-body">
-              <p class="proj-name">Formation of Double Neutron Stars</p>
-              <p class="proj-desc">Exploring how double neutron star systems form and evolve.</p>
+              <div class="proj-thumb" style="background-image: url('images/Astronomy.jpg');" role="img" aria-label="Astronomy image"></div>
+              <p class="proj-name proj-name-long">Formation of<br />Double Neutron Stars</p>
               <span class="read-more">read more →</span>
             </div>
-          </div>
-          <div class="proj-card" onclick="openDetail(this)" data-title="Double White Dwarfs"
-            data-img="images/project3.jpg"
-            data-detail-html="Full description of your double white dwarf research goes here.">
-            <div class="proj-thumb" style="background-image:url('images/project3.jpg')"></div>
+          </button>
+          <button class="proj-card" type="button" onclick="openDetail(this)" aria-label="Read more about Formation of Black Hole-Neutron Stars" data-title="Formation of Black Hole-Neutron Stars"
+            data-detail-html="coming soon!">
             <div class="proj-body">
+              <div class="proj-thumb" style="background-image: url('images/Astronomy.jpg');" role="img" aria-label="Astronomy image"></div>
+              <p class="proj-name proj-name-long">Formation of<br />Black Hole-Neutron Stars</p>
+              <span class="read-more">read more →</span>
+            </div>
+          </button>
+          <button class="proj-card" type="button" onclick="openDetail(this)" aria-label="Read more about Double White Dwarfs" data-title="Double White Dwarfs"
+            data-detail-html="coming soon!">
+            <div class="proj-body">
+              <div class="proj-thumb" style="background-image: url('images/Astronomy.jpg');" role="img" aria-label="Astronomy image"></div>
               <p class="proj-name">Double White Dwarfs</p>
-              <p class="proj-desc">Formation and evolution of double white dwarf systems.</p>
               <span class="read-more">read more →</span>
             </div>
-          </div>
+          </button>
         </div>
 
-        <div class="presentation-section">
-          <h3>Presentations &amp; Posters</h3>
-          <p>Here are my presenatations:</p>
+        <section class="presentation-section publications-section project-extras" aria-labelledby="publications-title">
+          <h3 id="publications-title">Publications</h3>
+          <ul class="publication-list">
+            <li>
+              <a href="https://doi.org/10.1093/mnras/staf1397" target="_blank" rel="noopener noreferrer">
+                Formation of heavy double neutron stars I: Eddington-limited accretion for a 1.4 solar-mass neutron
+                star at solar metallicity
+              </a>
+              <span>Ashwathi Nair and Simon Stevenson. <em>Monthly Notices of the Royal Astronomical Society</em>, 2025.</span>
+              <span>
+                <a href="https://arxiv.org/abs/2508.15624" target="_blank" rel="noopener noreferrer">arXiv:2508.15624</a>
+                ·
+                <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.543..233N" target="_blank" rel="noopener noreferrer">NASA ADS</a>
+              </span>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2608.17430" target="_blank" rel="noopener noreferrer">
+                Formation of heavy double neutron stars II: the role of heavy first-born neutron stars and low metallicity
+              </a>
+              <span>Ashwathi Nair and Simon Stevenson. <em>arXiv preprint</em>, 2026.</span>
+              <span>
+                <a href="https://arxiv.org/abs/2608.17430" target="_blank" rel="noopener noreferrer">arXiv:2608.17430</a>
+              </span>
+            </li>
+          </ul>
+        </section>
 
-          <iframe src="Binary_stars_in_new_era.pdf" width="100%" height="600px" style="border: none;"
-            title="Presentation Viewer">
-          </iframe>
+        <div class="presentation-section project-extras">
+          <h3>Presentations &amp; Posters</h3>
+          <p>Explore my presentations and posters.</p>
+
+          <section class="review-talks" aria-labelledby="review-talks-title">
+            <h4 id="review-talks-title">My review talks</h4>
+            <p>This presentation walks you through and shows how my project has progressed over the last three years.</p>
+
+            <div class="review-year">
+              <h5>2024</h5>
+              <a href="documents/CoC_presentation_2024.pdf" target="_blank" rel="noopener noreferrer">
+                CoC presentation (2024)
+              </a>
+            </div>
+
+            <div class="review-year">
+              <h5>2025</h5>
+              <a href="documents/GRAmaldi.pdf" target="_blank" rel="noopener noreferrer">
+                GR24 &amp; Amaldi16 (2025)
+              </a>
+              <a href="documents/MCR%20presentation_2025.pdf" target="_blank" rel="noopener noreferrer">
+                MCR presentation (2025)
+              </a>
+            </div>
+
+            <div class="review-year">
+              <h5>2026</h5>
+              <a href="documents/DTR_presentation_2026.pdf" target="_blank" rel="noopener noreferrer">
+                DTR presentation (2026)
+              </a>
+              <a href="documents/Nair_Ashwathi_OzGrav%20%5BAuto-saved%5D.pdf" target="_blank" rel="noopener noreferrer">
+                OzGrav presentation (2026)
+              </a>
+            </div>
+          </section>
+
+          <section class="poster-links" aria-labelledby="poster-links-title">
+            <h4 id="poster-links-title">Poster</h4>
+            <a href="documents/OzGrav_Japan_Poster_2026%20(Posters%20(Portrait))%20-%20Poster.pdf" target="_blank"
+              rel="noopener noreferrer">
+              OzGrav and KAGRA Summer School Collaboration poster (2026)
+            </a>
+          </section>
 
         </div>
 
         <div class="detail-view" id="research-detail">
-          <button class="back-btn" onclick="closeDetail('research-detail')">← back</button>
-          <div class="detail-img-wrap"><img class="detail-img" src="" alt="" /></div>
+          <button class="back-btn" type="button" onclick="closeDetail('research-detail')">Back</button>
           <h3 class="detail-title"></h3>
           <p class="detail-body"></p>
         </div>
       </article>
 
       <!-- COMMUNITY -->
-      <article id="community">
-        <h2 class="major">Community</h2>
-        <span class="close"></span>
+      <article id="community" aria-labelledby="community-title" tabindex="-1">
+        <h2 id="community-title" class="major">Community</h2>
         <p>Teaching, outreach, and equity work that I care deeply about.</p>
 
         <div class="community-scroll">
@@ -195,15 +261,15 @@
               early-career learners through hands-on mentoring.
             </p>
             <div class="gallery">
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Teaching photo 1">
                 <img src="images/pic01.jpg" alt="Teaching photo 1" />
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Teaching photo 2">
                 <img src="images/pic02.jpg" alt="Teaching photo 2" />
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Teaching photo 3">
                 <img src="images/pic03.jpg" alt="Teaching photo 3" />
-              </div>
+              </button>
             </div>
           </section>
 
@@ -216,15 +282,23 @@
               it.
             </p>
             <div class="gallery">
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Outreach photo 1">
                 <img src="images/outreach1.jpg" alt="Outreach photo 1" />
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Outreach photo 2">
                 <img src="images/outreach2.jpg" alt="Outreach photo 2" />
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Outreach photo 3">
                 <img src="images/outreach3.jpg" alt="Outreach photo 3" />
-              </div>
+              </button>
+            </div>
+            <div class="presentation-section outreach-presentation">
+              <h4>AstroEdu Presentation</h4>
+              <p>Presentation materials from AstroEdu.</p>
+              <a class="download-link" href="documents/AstroEdu%20presentation%20copy.pdf" target="_blank"
+                rel="noopener noreferrer">
+                Open the AstroEdu presentation PDF in a new tab
+              </a>
             </div>
           </section>
 
@@ -241,9 +315,8 @@
       </article>
 
       <!-- RESOURCES -->
-      <article id="resources">
-        <h2 class="major">Resources</h2>
-        <span class="close"></span>
+      <article id="resources" aria-labelledby="resources-title" tabindex="-1">
+        <h2 id="resources-title" class="major">Resources</h2>
         <p>Useful links and support materials for graduate study, accessibility, and community learning.</p>
 
         <div class="community-scroll">
@@ -262,9 +335,8 @@
       </article>
 
       <!-- ART -->
-      <article id="art">
-        <h2 class="major">Art</h2>
-        <span class="close"></span>
+      <article id="art" aria-labelledby="art-title" tabindex="-1">
+        <h2 id="art-title" class="major">Art</h2>
         <p>
           I enjoy different forms of art and expressing myself through them. I find myself experiencing my surroundings
           overwhelmingly, which makes me want to capture those feelings through painting, photography, video-based work,
@@ -281,24 +353,24 @@
               connected to it.
             </p>
             <div class="gallery">
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Painting and sketching">
                 <img src="images/art1.jpg" alt="Painting and sketching" />
                 <p class="art-caption">A quiet study in line and texture — the kind of image that feels like a pause.
                 </p>
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Photography and video inspired work">
                 <img src="images/art2.jpg" alt="Photography and video inspired work" />
                 <p class="art-caption">Photography helps me hold onto a fleeting mood before it disappears.</p>
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Poetry-inspired visual art">
                 <img src="images/art3.jpg" alt="Poetry-inspired visual art" />
                 <p class="art-caption">This piece is about softness, memory, and the emotional residue of a moment.</p>
-              </div>
-              <div class="gallery-item" onclick="openLightbox(this, event)">
+              </button>
+              <button class="gallery-item" type="button" onclick="openLightbox(this, event)" aria-label="Enlarge Visual storytelling sample">
                 <img src="images/pic01.jpg" alt="Visual storytelling sample" />
                 <p class="art-caption">A frame from my visual storytelling practice — simple, grounded, and intimate.
                 </p>
-              </div>
+              </button>
             </div>
           </section>
 
@@ -344,9 +416,8 @@
       </article>
 
       <!-- CONTACT -->
-      <article id="contact">
-        <h2 class="major">Contact</h2>
-        <span class="close"></span>
+      <article id="contact" aria-labelledby="contact-title" tabindex="-1">
+        <h2 id="contact-title" class="major">Contact</h2>
         <p>Find me on any of these platforms.</p>
         <div class="contact-grid">
           <a class="contact-card" href="mailto:nashwathi697@gmail.com">
@@ -417,7 +488,7 @@
         </div>
       </article>
 
-    </div>
+    </main>
     <!-- end #main -->
 
     <!-- ========== FOOTER ========== -->
@@ -443,11 +514,16 @@
       }
 
       const img = item.querySelector('img');
+      const previousFocus = document.activeElement;
       const lightbox = document.createElement('div');
       lightbox.className = 'lightbox open';
+        lightbox.setAttribute('role', 'dialog');
+        lightbox.setAttribute('aria-modal', 'true');
+        lightbox.setAttribute('aria-label', img.alt || 'Enlarged image');
       lightbox.onclick = (e) => {
         if (e.target === lightbox) {
           lightbox.remove();
+            previousFocus?.focus();
         }
       };
 
@@ -455,9 +531,11 @@
       closeBtn.className = 'lightbox-close';
       closeBtn.type = 'button';
       closeBtn.textContent = '×';
+        closeBtn.setAttribute('aria-label', 'Close enlarged image');
       closeBtn.onclick = (e) => {
         e.stopPropagation();
         lightbox.remove();
+          previousFocus?.focus();
       };
 
       const image = document.createElement('img');
@@ -467,6 +545,12 @@
       lightbox.appendChild(closeBtn);
       lightbox.appendChild(image);
       document.body.appendChild(lightbox);
+        closeBtn.focus();
+        lightbox.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            closeBtn.click();
+          }
+        });
     }
 
     function openDetail(card) {
@@ -480,7 +564,6 @@
         el.style.display = 'none';
       });
 
-      detail.querySelector('.detail-img').src = card.dataset.img;
       detail.querySelector('.detail-title').textContent = card.dataset.title;
       const html = card.dataset.detailHtml;
       if (html) {
@@ -490,6 +573,7 @@
       }
 
       grid.classList.add('hidden');
+      article.querySelectorAll('.project-extras').forEach(section => section.classList.add('hidden'));
       detail.classList.add('open');
       article.scrollTop = 0;
 
@@ -507,6 +591,7 @@
       });
 
       article.querySelector('.proj-grid').classList.remove('hidden');
+      article.querySelectorAll('.project-extras').forEach(section => section.classList.remove('hidden'));
       detail.classList.remove('open');
       article.scrollTop = 0;
     }

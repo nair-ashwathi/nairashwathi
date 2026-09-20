@@ -66,7 +66,7 @@
 			}
 
 	// Main.
-		var	delay = 325,
+var	delay = 120,
 			locked = false;
 
 		// Methods.
@@ -102,6 +102,7 @@
 
 							// Activate article.
 								$article.addClass('active');
+								$article.trigger('focus');
 
 							// Unlock.
 								locked = false;
@@ -139,6 +140,7 @@
 									setTimeout(function() {
 
 										$article.addClass('active');
+										$article.trigger('focus');
 
 										// Window stuff.
 											$window
@@ -178,6 +180,7 @@
 									setTimeout(function() {
 
 										$article.addClass('active');
+										$article.trigger('focus');
 
 										// Window stuff.
 											$window
@@ -292,7 +295,7 @@
 				var $this = $(this);
 
 				// Close.
-					$('<div class="close">Close</div>')
+					$('<button class="close" type="button" aria-label="Close section">Close</button>')
 						.appendTo($this)
 						.on('click', function() {
 							location.hash = '';
@@ -399,3 +402,28 @@
 					});
 
 })(jQuery);
+
+function openPresentation(card) {
+	var detail = document.getElementById('presentation-detail'),
+		frame = detail.querySelector('.presentation-detail-frame'),
+		download = detail.querySelector('.presentation-detail-download');
+
+	detail.querySelector('.presentation-detail-title').textContent = card.dataset.title;
+	frame.src = card.dataset.file;
+	frame.title = card.dataset.title;
+	download.href = card.dataset.file;
+	detail.hidden = false;
+	card.closest('.presentation-section').querySelector('.presentation-grid').hidden = true;
+	detail.querySelector('.back-btn').focus();
+}
+
+function closePresentation() {
+	var detail = document.getElementById('presentation-detail'),
+		section = detail.closest('.presentation-section');
+
+	detail.hidden = true;
+	detail.querySelector('.presentation-detail-frame').src = '';
+	section.querySelector('.presentation-grid').hidden = false;
+	section.querySelector('.presentation-card').focus();
+}
+
