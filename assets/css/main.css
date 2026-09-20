@@ -2329,6 +2329,11 @@ p, li {
 	margin-left: auto;
 }
 
+.community-block:first-of-type .gallery {
+	width: 80%;
+	max-width: 44rem;
+}
+
 .presentation-section {
   margin-top: 1.75rem;
   padding-top: 1rem;
