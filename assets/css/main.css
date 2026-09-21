@@ -2369,6 +2369,10 @@ li {
 	font-smooth: auto !important;
 }
 
+#main article a {
+	font-weight: 600 !important;
+}
+
 /* Keep headings and labels inside articles using the same Gill Sans stack */
 #main article h1,
 #main article h2,
@@ -2390,6 +2394,9 @@ li {
 #main article h2.major {
 	font-size: 1.95rem !important;
 	letter-spacing: 0.15em !important;
+	border-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	width: auto !important;
 }
 
 /* =============================================
@@ -2865,7 +2872,12 @@ html {
 #header .top-nav ul li {
 	border-left: solid 1px rgba(255, 255, 255, 0.3) !important;
 	border-top: 0 !important;
+	border-bottom: 0 !important;
 	padding-left: 0;
+}
+
+#header .top-nav ul li:nth-child(3) {
+	border-left: 0 !important;
 }
 
 #header .top-nav ul li:first-child {
@@ -2885,6 +2897,7 @@ html {
 	text-align: center;
 	white-space: nowrap;
 	color: #dfe9ff;
+	border-bottom: 0 !important;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
