@@ -2876,10 +2876,6 @@ html {
 	padding-left: 0;
 }
 
-#header .top-nav ul li:nth-child(3) {
-	border-left: 0 !important;
-}
-
 #header .top-nav ul li:first-child {
 	border-left: 0 !important;
 }
@@ -2899,6 +2895,12 @@ html {
 	color: #dfe9ff;
 	border-bottom: 0 !important;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#header .top-nav ul li:nth-child(3) a {
+	min-width: 11rem !important;
+	line-height: 1.25 !important;
+	white-space: normal;
 }
 
 @media screen and (max-width: 736px) {
@@ -2927,6 +2929,10 @@ html {
 		min-width: 0 !important;
 		padding: 0.75rem 0.25rem;
 		font-size: 0.65rem;
+	}
+
+	#header .top-nav ul li:nth-child(3) a {
+		min-width: 0 !important;
 	}
 }
 
