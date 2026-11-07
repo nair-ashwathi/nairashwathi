@@ -2730,7 +2730,12 @@ li {
 	transition: transform 0.3s ease;
 }
 
+.science-gallery .gallery-item {
+	aspect-ratio: auto;
+}
+
 .science-gallery .gallery-item img {
+	aspect-ratio: auto;
 	object-fit: contain;
 	background: rgba(255, 255, 255, 0.03);
 }
