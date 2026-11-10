@@ -24,12 +24,8 @@
 			xxsmall:  [ null,      '360px'  ]
 		});
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+	// Start page transitions as soon as the document scripts are ready.
+		$body.removeClass('is-preload');
 
 	// Fix: Flexbox min-height bug on IE.
 		if (browser.name == 'ie') {
@@ -426,4 +422,3 @@ function closePresentation() {
 	section.querySelector('.presentation-grid').hidden = false;
 	section.querySelector('.presentation-card').focus();
 }
-
