@@ -1913,14 +1913,14 @@ li {
 
 .proj-grid {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
 	margin-top: 1.5rem;
 }
 
 .research-intro {
 	display: grid;
-	grid-template-columns: minmax(0, 1fr) 10rem;
+	grid-template-columns: minmax(0, 1fr) 13rem;
 	align-items: center;
 	gap: 1rem;
 }
@@ -1933,7 +1933,7 @@ li {
 	display: block;
 	width: 100%;
 	height: auto;
-	max-height: 14rem;
+	max-height: 18rem;
 	object-fit: contain;
 	justify-self: end;
 	border: 0;
@@ -1942,7 +1942,7 @@ li {
 
 @media screen and (max-width: 480px) {
 	.research-intro {
-		grid-template-columns: minmax(0, 1fr) 7rem;
+		grid-template-columns: minmax(0, 1fr) 8rem;
 	}
 }
 
