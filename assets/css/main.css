@@ -1706,16 +1706,27 @@ body.is-preload #header .content .inner {
 }
 
 #main article .close {
+	appearance: none;
 	display: block;
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 3rem;
 	height: 3rem;
+	padding: 0;
+	border: 0 !important;
+	border-radius: 0;
+	background: transparent !important;
+	box-shadow: none !important;
 	cursor: pointer;
 	text-indent: 4rem;
 	overflow: hidden;
 	white-space: nowrap;
+}
+
+#main article .close:hover,
+#main article .close:active {
+	background: transparent !important;
 }
 
 #main article .close:before {
@@ -3115,11 +3126,26 @@ body.is-article-visible .landing-grid {
 	width: 100%;
 }
 
+.landing-illustration {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+
 .landing-right .illus-panel img {
+	display: block;
 	width: 130%;
 	max-width: 34rem;
 	height: auto;
 	animation: none;
+	margin: 0 auto;
+}
+
+.landing-illustration figcaption {
+	margin-top: 0.4rem;
+	font-size: 0.68rem;
+	line-height: 1.4;
+	color: rgba(36, 27, 47, 0.75);
 }
 
 /* ---- About Me: always visible on the landing page ---- */
