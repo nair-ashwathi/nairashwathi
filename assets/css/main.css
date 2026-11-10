@@ -1556,17 +1556,6 @@ body.is-article-visible #header {
 	opacity: 0;
 }
 
-body.is-preload #header {
-	-moz-filter: blur(0.125rem);
-	-webkit-filter: blur(0.125rem);
-	-ms-filter: blur(0.125rem);
-	filter: blur(0.125rem);
-}
-
-body.is-preload #header>* {
-	opacity: 0;
-}
-
 body.is-preload #header .content .inner {
 	max-height: 0;
 	padding-top: 0;
@@ -2731,10 +2720,10 @@ li {
 	overflow: hidden;
 	display: grid;
 	place-items: center;
-	padding: 0.6rem;
-	border: 1px solid rgba(255, 255, 255, 0.18);
-	border-radius: 0.45rem;
-	background: rgba(255, 255, 255, 0.06);
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
 }
 
 .science-gallery .gallery-item img {
@@ -3126,7 +3115,6 @@ body.is-article-visible .landing-grid {
 	max-width: 100%;
 	height: auto;
 	animation: none;
-	mix-blend-mode: multiply;
 }
 
 /* ---- About Me: always visible on the landing page ---- */

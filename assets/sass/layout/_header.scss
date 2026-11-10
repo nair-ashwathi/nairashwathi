@@ -160,12 +160,6 @@
 		}
 
 		body.is-preload & {
-			> * {
-				opacity: 0;
-			}
-
-			@include vendor('filter', 'blur(0.125rem)');
-
 			.content {
 				.inner {
 					max-height: 0;
