@@ -2946,33 +2946,30 @@ html {
 	}
 }
 
-/* ---- landing content: 60/40 grid ---- */
+/* ---- landing content ---- */
 .landing-grid {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: center;
-	gap: 3rem;
+	display: grid;
+	grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+	align-items: start;
+	gap: 2rem;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 1.4rem auto 0;
-	padding: 0 3rem;
+	padding: 0 2rem;
 	position: relative;
 	z-index: 3;
 	color: #241b2f;
 }
 
 .landing-left {
-	flex: 0 1 60%;
-	max-width: 60%;
+	min-width: 0;
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
 }
 
 .landing-right {
-	flex: 0 1 40%;
-	max-width: 40%;
+	min-width: 0;
 	display: flex;
 	justify-content: center;
 	padding-top: 1rem;
@@ -2989,14 +2986,14 @@ body.is-article-visible .landing-grid {
 .profile-wrap {
 	display: flex;
 	align-items: flex-start;
-	gap: 2.5rem;
+	gap: 2rem;
 	width: 100%;
 	margin-top: -0.25rem;
 }
 
 .profile-block {
 	display: flex;
-	flex: 0 0 320px;
+	flex: 0 0 260px;
 	flex-direction: column;
 	align-items: center;
 	gap: 0.85rem;
@@ -3115,12 +3112,10 @@ body.is-article-visible .landing-grid {
 	width: 100%;
 }
 
-.landing-right .illus-panel svg,
 .landing-right .illus-panel img {
-	max-width: 220px;
 	width: 100%;
-	animation: floatY 4s ease-in-out infinite;
-	opacity: 0.9;
+	max-width: 100%;
+	height: auto;
 }
 
 /* ---- About Me: always visible on the landing page ---- */
@@ -3153,7 +3148,7 @@ body.is-article-visible .landing-grid {
 /* ---- responsive: stack into one column ---- */
 @media screen and (max-width: 900px) {
 	.landing-grid {
-		flex-direction: column;
+		grid-template-columns: minmax(0, 1fr);
 		align-items: center;
 		padding: 0 1.5rem;
 		gap: 2.5rem;
@@ -3161,8 +3156,7 @@ body.is-article-visible .landing-grid {
 
 	.landing-left,
 	.landing-right {
-		max-width: 100%;
-		flex: 1 1 100%;
+		width: 100%;
 	}
 
 	.profile-wrap {
