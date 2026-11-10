@@ -3127,15 +3127,16 @@ body.is-article-visible .landing-grid {
 }
 
 .landing-illustration {
-	width: 100%;
+	width: 130%;
+	max-width: 34rem;
 	margin: 0;
 	text-align: center;
 }
 
 .landing-right .illus-panel img {
 	display: block;
-	width: 130%;
-	max-width: 34rem;
+	width: 100%;
+	max-width: 100%;
 	height: auto;
 	animation: none;
 	margin: 0 auto;
@@ -3189,7 +3190,7 @@ body.is-article-visible .landing-grid {
 		width: 100%;
 	}
 
-	.landing-right .illus-panel img {
+	.landing-illustration {
 		width: 100%;
 		max-width: 100%;
 	}
