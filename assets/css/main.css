@@ -3111,8 +3111,8 @@ body.is-article-visible .landing-grid {
 }
 
 .landing-right .illus-panel img {
-	width: 100%;
-	max-width: 100%;
+	width: 130%;
+	max-width: 34rem;
 	height: auto;
 	animation: none;
 }
@@ -3156,6 +3156,11 @@ body.is-article-visible .landing-grid {
 	.landing-left,
 	.landing-right {
 		width: 100%;
+	}
+
+	.landing-right .illus-panel img {
+		width: 100%;
+		max-width: 100%;
 	}
 
 	.profile-wrap {
